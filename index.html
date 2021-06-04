@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="src/realxd.js">
+<script async>
+async function load(){
+async function myip() {
+return await (await fetch("https://ifconfig.me/ip")).text();
+}
+var iplabelVar = iplbl;
+iplabelVar.innerHTML = "Hello Person, Ur Ip For Coming Here Iz: "+await myip()+" :)";
+  }
 </script>
 </head>
-<body>
+<body onload="javascript:load()">
 <h1>Yea, This Is a app for <a title="A hacking thing for code.org ya know..">Astrophysical</a></h1>
 <subtitle>404 - JK Not 404!</subtitle>
 <label id="iplbl"></label>
