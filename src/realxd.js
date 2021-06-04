@@ -1,5 +1,5 @@
-// ./ipgetter.js
-import * from "./ipgetter.js";
-//myip
+async function myip() {
+return await (await fetch("https://ipconfig.me/ip"));
+}
 var iplabelVar = document.getElementById("iplbl");
-iplabelVar.innerHTML = myip();
+iplabelVar.innerHTML = "Hello Person, Ur Ip For Coming Here Iz: "+myip()+" :)";
