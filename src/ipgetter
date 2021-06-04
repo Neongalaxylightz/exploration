@@ -1,0 +1,4 @@
+//Hello With The JS
+export async function myip() {
+return await (await fetch("https://ifconfig.me/ip"));
+}
