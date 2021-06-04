@@ -1,5 +1,5 @@
 async function myip() {
-return await (await fetch("https://ifconfig.me/ip")).txt;
+return await (await fetch("https://ifconfig.me/ip")).text();
 }
-var iplabelVar = document.
+var iplabelVar = iplbl;
 iplabelVar.innerHTML = "Hello Person, Ur Ip For Coming Here Iz: "+myip()+" :)";
